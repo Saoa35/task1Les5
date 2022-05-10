@@ -13,6 +13,7 @@ class Form extends React.Component {
         super(props);
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.json = JSON.stringify(this.state);
     }
     
     handleChange(e) {
@@ -26,6 +27,7 @@ class Form extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         console.log(this.state);
+        // this.json;
 
             // const json = JSON.stringify(this.state);
 
@@ -50,7 +52,7 @@ class Form extends React.Component {
                    <input type='submit' value='Translate to json'/>
                </form>
                <p >
-                   {/* {this.state} */}
+                   {this.json}
                </p>
             </div>
 
