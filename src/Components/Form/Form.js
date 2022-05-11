@@ -1,5 +1,10 @@
 import React from 'react';
 
+
+// function Text(props) {
+//     return <p>Yo typed in input: {props.name}</p>
+// }
+
 class Form extends React.Component {
 
     state = {
@@ -13,8 +18,18 @@ class Form extends React.Component {
         super(props);
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.json = JSON.stringify(this.state);
+        // this.json = JSON.stringify(this.state);
+
     }
+
+
+    // parseToJson() {
+        // const json = JSON.stringify(st);
+
+    //     this.setState({
+    //         this.json : this.json
+    //     });
+    // }
     
     handleChange(e) {
         const { name, value } = e.target;
@@ -27,19 +42,17 @@ class Form extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         console.log(this.state);
-        // this.json;
 
-            // const json = JSON.stringify(this.state);
-
-            // this.setState({
-            //     json
-            // });
+        // const json = JSON.stringify(this.state);
+        // <Text name={json}/>;
+        
+        // this.setState({
+        //     <Text {name: json}/>
+        // });
         }
 
 
     render() {
-
-        // console.log(this.state.value);
 
         return(
 
@@ -51,8 +64,8 @@ class Form extends React.Component {
                    <input type='text' name='input3' value={this.state.input3} onChange={this.handleChange}/> <br/>
                    <input type='submit' value='Translate to json'/>
                </form>
-               <p >
-                   {this.json}
+               <p>
+               {/* <Text name={json}/> */}
                </p>
             </div>
 
