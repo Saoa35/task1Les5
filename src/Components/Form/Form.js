@@ -67,7 +67,7 @@ class Form extends React.Component {
                    <input className={styles.input} type='text' name='input1' value={this.state.input1} onChange={this.handleChange}/> <br/>
                    <input className={styles.input} type='text' name='input2' value={this.state.input2} onChange={this.handleChange}/> <br/>
                    <input className={styles.input} type='text' name='input3' value={this.state.input3} onChange={this.handleChange}/> <br/>
-                   <input type='submit' value='Translate to json'/>
+                   <input className={styles.button} type='submit' value='Translate to json'/>
                </form>
                {/* <p name='paragraph' value={this.state.paragraph}>
 
