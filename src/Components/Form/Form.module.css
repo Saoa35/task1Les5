@@ -1,0 +1,14 @@
+.wrapper {
+    background-color:aqua;
+    margin: 20px;
+}
+
+.input {
+    display: block;
+    background-color:chartreuse;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-left: 43%;
+    border: 2px solid red;
+    border-radius: 8px;
+}
